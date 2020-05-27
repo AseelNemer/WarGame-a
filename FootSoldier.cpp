@@ -7,11 +7,11 @@
 #include "Board.hpp"
 using namespace std;
 
-
 namespace WarGame
 {
     void FootSoldier::activate(int x, int y, Board& board_f) 
     {
+        
     }
 
 }

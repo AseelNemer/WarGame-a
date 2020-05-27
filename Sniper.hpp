@@ -4,8 +4,6 @@
 #include <stdexcept>
 #include "Soldier.hpp"
 
-
-
 namespace WarGame
 {
     class Sniper : public Soldier{
@@ -14,7 +12,6 @@ namespace WarGame
         public:
         Sniper(uint player): Soldier(player, 100, 50){}
         void activate(int x, int y, Board& board_f) override;
-       // void printSoldier() override;
     };
 
 } 

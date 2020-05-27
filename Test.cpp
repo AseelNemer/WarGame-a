@@ -151,11 +151,10 @@ TEST_CASE("Game-2")
     CHECK(board.has_soldiers(1));
     CHECK(board.has_soldiers(2));
 
-    //
+    
     CHECK_THROWS_MESSAGE(board.move(1, {0, 0}, Board::MoveDIR::Up), "ERR: this soldier is dead..");
     CHECK_THROWS_MESSAGE(board.move(1, {1, 1}, Board::MoveDIR::Up), "ERR: this soldier is dead..");
     CHECK_THROWS_MESSAGE(board.move(1, {1, 2}, Board::MoveDIR::Up), "ERR: this soldier is dead..");
-
     CHECK_THROWS_MESSAGE(board.move(1, {0, 1}, Board::MoveDIR::Up), "ERR: no soldier on board");
     CHECK_THROWS_MESSAGE(board.move(1, {0, 2}, Board::MoveDIR::Up), "ERR: no soldier on board");
     CHECK_THROWS_MESSAGE(board.move(1, {0, 3}, Board::MoveDIR::Up), "ERR: no soldier on board");
@@ -163,7 +162,6 @@ TEST_CASE("Game-2")
     CHECK_THROWS_MESSAGE(board.move(1, {0, 6}, Board::MoveDIR::Up), "ERR: no soldier on board");
     CHECK_THROWS_MESSAGE(board.move(1, {0, 7}, Board::MoveDIR::Up), "ERR: no soldier on board");
     CHECK_THROWS_MESSAGE(board.move(1, {1, 6}, Board::MoveDIR::Up), "ERR: no soldier on board");
-
     CHECK_THROWS_MESSAGE(board.move(1, {7, 0}, Board::MoveDIR::Up), "ERR: the soldier belongs to the other player");
     CHECK_THROWS_MESSAGE(board.move(1, {7, 6}, Board::MoveDIR::Up), "ERR: the soldier belongs to the other player");
     CHECK_THROWS_MESSAGE(board.move(1, {6, 0}, Board::MoveDIR::Up), "ERR: the soldier belongs to the other player");
@@ -175,14 +173,12 @@ TEST_CASE("Game-2")
     CHECK_THROWS_MESSAGE(board.move(2, {1, 3}, Board::MoveDIR::Up), "ERR: the soldier belongs to the other player");
     CHECK_THROWS_MESSAGE(board.move(2, {1, 5}, Board::MoveDIR::Up), "ERR: the soldier belongs to the other player");
     CHECK_THROWS_MESSAGE(board.move(2, {0, 0}, Board::MoveDIR::Up), "ERR: the soldier belongs to the other player");
-
     CHECK_THROWS_MESSAGE(board.move(1, {0, 0}, Board::MoveDIR::Down), "ERR: you tried to move out of the board");
     CHECK_THROWS_MESSAGE(board.move(1, {0, 0}, Board::MoveDIR::Left), "ERR: you tried to move out of the board");
     CHECK_THROWS_MESSAGE(board.move(1, {0, 5}, Board::MoveDIR::Down), "ERR: you tried to move out of the board");
     CHECK_THROWS_MESSAGE(board.move(1, {7, 6}, Board::MoveDIR::Up), "ERR: you tried to move out of the board");
     CHECK_THROWS_MESSAGE(board.move(1, {7, 0}, Board::MoveDIR::Up), "ERR: you tried to move out of the board");
     CHECK_THROWS_MESSAGE(board.move(1, {6, 0}, Board::MoveDIR::Left), "ERR: you tried to move out of the board");
-
     CHECK_THROWS_MESSAGE(board.move(1, {1, 1}, Board::MoveDIR::Right), "ERR: targeted location already has a soldier");
     CHECK_THROWS_MESSAGE(board.move(1, {1, 2}, Board::MoveDIR::Left), "ERR: targeted location already has a soldier");
     CHECK_THROWS_MESSAGE(board.move(1, {1, 2}, Board::MoveDIR::Right), "ERR: targeted location already has a soldier");

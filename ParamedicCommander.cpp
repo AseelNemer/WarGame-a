@@ -12,7 +12,4 @@ namespace WarGame
     {
         
     }
-
-    
-
 }

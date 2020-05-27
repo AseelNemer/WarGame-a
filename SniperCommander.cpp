@@ -10,6 +10,6 @@ namespace WarGame
 {
     void SniperCommander::activate(int x, int y, Board& board_f)
     {
+        
     }
-
 }

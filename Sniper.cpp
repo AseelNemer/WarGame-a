@@ -10,5 +10,6 @@ namespace WarGame
 {
     void Sniper::activate(int x, int y, Board &board_f)
     {
+        
     }
 }

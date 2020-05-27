@@ -12,6 +12,6 @@ namespace WarGame
 {
     void Paramedic::activate(int x, int y, Board &board_f)
     {
-    }
 
+    }
 }

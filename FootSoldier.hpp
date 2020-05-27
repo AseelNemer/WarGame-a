@@ -5,7 +5,6 @@
 #include "Soldier.hpp"
 
 
-
 namespace WarGame
 {
     class FootSoldier : public Soldier{
@@ -14,7 +13,7 @@ namespace WarGame
         public:
         FootSoldier(uint player): Soldier(player, 100, 10){}
         void activate(int x, int y, Board& board_f) override;
-        //void printSoldier() override;
+
     };
 
 }

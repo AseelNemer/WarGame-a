@@ -14,7 +14,6 @@ namespace WarGame
             currentHealth += 100;
             }
         void activate(int x, int y, Board& board_f) override;
-       // void printSoldier() override;
     };
 
 } 

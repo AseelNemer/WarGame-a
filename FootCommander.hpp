@@ -15,7 +15,7 @@ namespace WarGame
             power += 10;
             }
         void activate(int x, int y, Board& board_f) override;
-        //void printSoldier() override;
+        
     };
 
 } 
